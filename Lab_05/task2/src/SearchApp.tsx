@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User } from './types';
+import type { User } from './types';
 import { UserCard } from './UserCard';
 
 const INITIAL_DATA: User[] = [
@@ -26,6 +26,7 @@ export const SearchApp = () => {
   };
 
   const handleClear = (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.preventDefault();
     setSearchTerm("");
     setFilteredUsers(users);
   };
