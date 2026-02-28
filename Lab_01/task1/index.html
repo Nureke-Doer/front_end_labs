@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imperative Toggle</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .highlight { background: yellow; }
+    </style>
+</head>
+<body>
+    <button id="toggle-btn">Toggle Highlight</button>
+    <p id="text">This is a paragraph to highlight.</p>
+
+    <script>
+        $(document).ready(function() {
+            $('#toggle-btn').click(function() {
+                $('#text').toggleClass('highlight');
+            });
+        });
+    </script>
+</body>
+</html>
