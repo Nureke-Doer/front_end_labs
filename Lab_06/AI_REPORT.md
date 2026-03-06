@@ -21,3 +21,5 @@
 - Understood the `loader` pattern: data can be pre-fetched before the component renders.
 - Learned about dynamic route segments (`:id`) and how to access them via `useParams`.
 - Mastered TypeScript strict module imports for cleaner compiled code.
+
+# Я тут)))
